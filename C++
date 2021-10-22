@@ -1,0 +1,36 @@
+#include<iostream>
+#include<string>
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+int main()
+{
+    int i,j, a,t, flag;
+    cin>>t;
+    for(i=0; i<t; i++)
+
+
+    {
+        cin>>a;
+        flag=0;
+
+        for(j=2; j*j<a; j++)
+        {
+            if(a%j==0)
+            {
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0){
+        cout<<"this is a prime num"<<endl;
+        }
+        else{
+
+             cout<<"this is not a prime num"<<endl;
+        }
+
+
+
+    }
+}
